@@ -16,7 +16,3 @@ for file in files:
     data_d= data_b.drop({data_b.columns[0],data_b.columns[1]},axis=1)
     data_c = pd.concat([data_a,data_d],axis=1)
     data_c.to_csv(out + "\\" + file, index=False);
-
-#data_c.to_csv("E:\\out\\1.csv",index=False);
-'''data_c.to_csv("E:\\out\\1.csv",index=False);
-print(data_c)'''
